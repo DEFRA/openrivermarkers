@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="#">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+  
+  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        What do you want to do?
+      </h1>
+    </legend>
+
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-1" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-1-item-hint">
+        <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in-1">
+          Create an account to receive flood warnings
+        </label>
+        <span id="sign-in-1-item-hint" class="govuk-hint govuk-radios__hint">
+          You will need to have your contact details to hand.
+        </span>
+      </div>
+	  
+	  
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in-2">
+          Sign into your existing flood warning account
+        </label>
+        <span id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+          You will need your email address or customer reference number, and account password.
+        </span>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+      <form class="form" action="# method="post">
+
+        <button class="govuk-button">Continue</button>
+
+      </form>
+
+{% endblock %}
