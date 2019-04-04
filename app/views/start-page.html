@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Sign up for flood warnings
+  {{ serviceName }}
 {% endblock %}
 
 {% block header %}
@@ -41,9 +41,13 @@
       <div class="govuk-inset-text">
       <p>The online service is also available in <a href="https://www.fws.environment-agency.gov.uk/app/olr/home?style=NRW&lang=cy">Welsh (Cymraeg)</a>.</p>
       </div>
-      <p><a class="govuk-button govuk-button--start" href="step-1.html" role="button">Start now</a></p><!--   <div class="govuk-inset-text">
+      <p><a class="govuk-button govuk-button--start" href="#" role="button">Start now</a></p>
+	  
+	  <!--   <div class="govuk-inset-text">
       <p>Register for flood warnings in <a rel="external" href="http://floodline.sepa.org.uk/floodingsignup/">Scotland</a>. You can use flood maps to <a rel="external" href="http://riversagency.maps.arcgis.com/apps/webappviewer/index.html?id=fd6c0a01b07840269a50a2f596b3daf6">check flooding risk in Northern Ireland</a>.</p>
       </div>  -->
+	  
+	  
       <h2 class="govuk-heading-m">Other ways to register</h2>
       <p>If you’re in England, Scotland or Wales you can also register, update or remove your contacts by calling Floodline.</p>
       <div class="govuk-inset-text">
@@ -72,7 +76,7 @@
               <a href="https://flood-warning-information.service.gov.uk/warnings">Flood information service</a>
             </li>
             <li>
-              <a href="https://flood-warning-information.service.gov.uk/5-day-flood-risk">5-day flood risk for England and Wales</a>
+              <a href="https://flood-warning-information.service.gov.uk/5-day-flood-risk">5-day flood risk for England and Wales<a>
             </li>
           </ul>
         </nav>
