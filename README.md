@@ -1,4 +1,4 @@
-# Flood Warning System Online Registration Revitilisation project
+# Flood Warning System (FWS) Online Registration (OLR) revitilisation project
 
 
 
