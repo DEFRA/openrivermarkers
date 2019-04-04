@@ -31,7 +31,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Sign up to flood warnings
 {% endblock %}
 
 {% block header %}
@@ -43,6 +43,14 @@
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
+  
+  {{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
 {% endblock %}
 
 {% if useAutoStoreData %}
