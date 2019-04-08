@@ -4,9 +4,13 @@
   {{ serviceName }}
 {% endblock %}
 
-{% block content %}
+{% block beforeContent %}  
 
 <a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
